@@ -1,0 +1,35 @@
+.productList{
+    flex: 4;
+    height: calc(100vh - 50px);
+}
+
+.productListItem{
+    display: flex;
+    align-items: center;
+}
+.productListImg{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.productListIcons{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    height: inherit;
+}
+.productsLink{
+    display: flex;
+    align-items: center;
+}
+.productListIconEdit{
+    color: rgb(40, 160, 40);
+    cursor: pointer;
+}
+.productListIconDelete{
+    color: red;
+    cursor: pointer;
+}
