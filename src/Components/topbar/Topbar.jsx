@@ -7,7 +7,7 @@ import {
 import profilePhoto from "./../../images/profileimg.avif";
 import { useContext } from "react";
 import { AuthContext } from "../../context/authContext/AuthContext";
-import { logout } from "../../context/authContext/apiCalls";
+import { logout } from "../../context/authContext/authApiCalls";
 import { useNavigate } from "react-router-dom";
 
 const Topbar = () => {
