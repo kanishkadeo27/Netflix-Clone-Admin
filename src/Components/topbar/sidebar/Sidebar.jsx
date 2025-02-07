@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom";
 import "./sidebar.css";
 import {
-  Home,
   Timeline,
   TrendingUp,
   PersonOutlineOutlined,
-  StorefrontOutlined,
+  List,
   AttachMoneyOutlined,
   BarChartOutlined,
   EmailOutlined,
@@ -52,9 +51,11 @@ const Sidebar = () => {
                 <PlayArrowOutlined className="sidebarIcon" /> Movies
               </li>
             </Link>
-            <li className="sidebarListItem">
-              <AttachMoneyOutlined className="sidebarIcon" /> Transactions
-            </li>
+            <Link to="/lists" className="link">
+              <li className="sidebarListItem">
+                <List className="sidebarIcon" /> Lists
+              </li>
+            </Link>
             <li className="sidebarListItem">
               <BarChartOutlined className="sidebarIcon" /> Reports
             </li>

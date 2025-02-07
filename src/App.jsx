@@ -12,13 +12,14 @@ import {
 } from "react-router-dom";
 import UserList from "./pages/userList/UserList";
 import NewUser from "./pages/newUser/NewUser";
-import ProductList from "./pages/productsList/ProductList";
-import ProductPage from "./pages/productPage/ProductPage";
-import NewProduct from "./pages/newProduct/NewProduct";
+import MovieList from "./pages/moviesList/MovieList";
+import MoviePage from "./pages/moviePage/MoviePage";
+import NewMovie from "./pages/newMovie/NewMovie";
 import User from "./pages/userPage/User";
 import Login from "./pages/login/Login";
 import { useContext } from "react";
 import { AuthContext } from "./context/authContext/AuthContext";
+import Lists from "./pages/lists/Lists";
 
 // Layout component to conditionally render Topbar & Sidebar
 function Layout() {
@@ -35,9 +36,12 @@ function Layout() {
           <Route path="/users" element={<UserList />} />
           <Route path="/user/:userId" element={<User />} />
           <Route path="/newUser" element={<NewUser />} />
-          <Route path="/movies" element={<ProductList />} />
-          <Route path="/product/:productId" element={<ProductPage />} />
-          <Route path="/newProduct" element={<NewProduct />} />
+          <Route path="/movies" element={<MovieList />} />
+          <Route path="/movie/:movieId" element={<MoviePage />} />
+          <Route path="/newMovie" element={<NewMovie />} />
+          <Route path="/lists" element={<Lists />} />
+          {/* <Route path="/list/:listId" element={<MoviePage />} />
+          <Route path="/newList" element={<NewMovie />} /> */}
         </Routes>
       </div>
     </>

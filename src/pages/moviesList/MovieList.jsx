@@ -1,17 +1,16 @@
-import "./productList.css";
+import "./movieList.css";
 import { DeleteOutline, Edit } from "@mui/icons-material";
 import { DataGrid } from "@mui/x-data-grid";
 import { productRows } from "../../dummyData";
 import { Link } from "react-router-dom";
 import { useContext, useEffect, useState } from "react";
-import User from "../userPage/User";
 import { MovieContext } from "../../context/movieContext/MovieContext";
 import {
   deleteMovie,
   getMovies,
 } from "../../context/movieContext/movieApiCalls";
 
-const ProductList = () => {
+const MovieList = () => {
   const [data, setData] = useState(productRows);
   const { movies, dispatch } = useContext(MovieContext);
 
@@ -52,7 +51,7 @@ const ProductList = () => {
           <div className="userListIcons">
             <Link
               to={{
-                pathname: "/product/" + params.row._id,
+                pathname: "/movie/" + params.row._id,
               }}
               state={{ movie: params.row }} // Pass the state here
               className="usersLink"
@@ -89,4 +88,4 @@ const ProductList = () => {
   );
 };
 
-export default ProductList;
+export default MovieList;

@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import "./newProduct.css";
+import "./newMovie.css";
 import supabase from "../../supabase"; // Import Supabase
 import { createMovie } from "../../context/movieContext/movieApiCalls";
 import { MovieContext } from "../../context/movieContext/MovieContext";
@@ -27,7 +27,7 @@ export default function NewMovie() {
 
       // Upload file to Supabase Storage
       const { data, error } = await supabase.storage
-        .from("files-uploads") // Use a bucket named "movies"
+        .from("files-uploads")
         .upload(fileName, item.file, {
           cacheControl: "3600",
           upsert: false,
