@@ -30,9 +30,9 @@ const Lists = () => {
           <div className="userListIcons">
             <Link
               to={{
-                pathname: "/movie/" + params.row._id,
+                pathname: "/list/" + params.row._id,
               }}
-              state={{ movie: params.row }} // Pass the state here
+              state={{ list: params.row }} // Pass the state here
               className="usersLink"
             >
               <Edit className="productListIconEdit" />

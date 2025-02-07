@@ -20,6 +20,8 @@ import Login from "./pages/login/Login";
 import { useContext } from "react";
 import { AuthContext } from "./context/authContext/AuthContext";
 import Lists from "./pages/lists/Lists";
+import ListPage from "./pages/listPage/ListPage";
+import NewList from "./pages/newList/NewList";
 
 // Layout component to conditionally render Topbar & Sidebar
 function Layout() {
@@ -40,8 +42,8 @@ function Layout() {
           <Route path="/movie/:movieId" element={<MoviePage />} />
           <Route path="/newMovie" element={<NewMovie />} />
           <Route path="/lists" element={<Lists />} />
-          {/* <Route path="/list/:listId" element={<MoviePage />} />
-          <Route path="/newList" element={<NewMovie />} /> */}
+          <Route path="/list/:listId" element={<ListPage />} />
+          <Route path="/newList" element={<NewList />} />
         </Routes>
       </div>
     </>
