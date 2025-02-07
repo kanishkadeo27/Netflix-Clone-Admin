@@ -28,12 +28,12 @@ const Sidebar = () => {
                 <HomeOutlined className="sidebarIcon" /> Home
               </li>
             </Link>
-            <li className="sidebarListItem">
+            {/* <li className="sidebarListItem">
               <Timeline className="sidebarIcon" /> Analytics
             </li>
             <li className="sidebarListItem">
               <TrendingUp className="sidebarIcon" /> Sales
-            </li>
+            </li> */}
           </ul>
         </div>
 
@@ -56,13 +56,10 @@ const Sidebar = () => {
                 <List className="sidebarIcon" /> Lists
               </li>
             </Link>
-            <li className="sidebarListItem">
-              <BarChartOutlined className="sidebarIcon" /> Reports
-            </li>
           </ul>
         </div>
         {/* 3 */}
-        <div className="sideMenu">
+        {/* <div className="sideMenu">
           <h3 className="sidebarTitle">Notifications</h3>
           <ul className="sidebarList">
             <li className="sidebarListItem ">
@@ -75,9 +72,9 @@ const Sidebar = () => {
               <MessageOutlined className="sidebarIcon" /> Messaages
             </li>
           </ul>
-        </div>
+        </div> */}
         {/* 4 */}
-        <div className="sideMenu">
+        {/* <div className="sideMenu">
           <h3 className="sidebarTitle">Staff</h3>
           <ul className="sidebarList">
             <li className="sidebarListItem ">
@@ -90,7 +87,7 @@ const Sidebar = () => {
               <ReportOutlined className="sidebarIcon" /> Reports
             </li>
           </ul>
-        </div>
+        </div> */}
       </div>
     </div>
   );
