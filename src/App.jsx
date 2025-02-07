@@ -21,7 +21,7 @@ import { useContext } from "react";
 import { AuthContext } from "./context/authContext/AuthContext";
 import Lists from "./pages/lists/Lists";
 import ListPage from "./pages/listPage/ListPage";
-import NewList from "./pages/newList/NewList";
+import NewList from "./pages/listNew/NewList";
 
 // Layout component to conditionally render Topbar & Sidebar
 function Layout() {
